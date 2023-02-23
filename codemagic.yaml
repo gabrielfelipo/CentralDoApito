@@ -10,7 +10,7 @@ workflows:
             script: |
               xcode-project run-tests \
                 --workspace CentralDoApito/BoringDay/BoringDay.xcodeproj/project.xcworkspace\
-                --scheme CentralDoApito/BoringDay/BoringDay
+                --scheme BoringDay
         publishing:
           email:
             recipients:
