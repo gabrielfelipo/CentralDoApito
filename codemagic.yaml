@@ -1,0 +1,21 @@
+workflows:
+    boring-workflow:
+        name: Boring Pipeline
+        scripts:
+          - name: CICD Started
+            script: echo "Welcome to your CICD set up"
+          - name: Build Boring app
+            script: xcodebuild build -scheme "BoringDay" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+          - name: iOS test
+            script: |
+              xcode-project run-tests \
+                --workspace BoringDay.xcodeproj/project.xcworkspace\
+                --scheme BoringDay
+        publishing:
+          email:
+            recipients:
+              - gabriel.felipo2010@gmail.com
+            notify:
+              success: true
+              failure: true
+
