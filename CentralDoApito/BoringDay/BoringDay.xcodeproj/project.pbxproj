@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA04DF2229A7E4C400B232FA /* BoringDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA04DF2129A7E4C400B232FA /* BoringDayTests.swift */; };
 		CA627770291E9B3F005BEA18 /* BoringDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62776F291E9B3F005BEA18 /* BoringDayApp.swift */; };
 		CA627772291E9B3F005BEA18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA627771291E9B3F005BEA18 /* ContentView.swift */; };
 		CA627774291E9B3F005BEA18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA627773291E9B3F005BEA18 /* Assets.xcassets */; };
@@ -17,7 +18,19 @@
 		CAA59A132929751E00EED2BC /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA59A122929751E00EED2BC /* FilterSheet.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CA04DF2329A7E4C400B232FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA627764291E9B3E005BEA18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA62776B291E9B3E005BEA18;
+			remoteInfo = BoringDay;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CA04DF1F29A7E4C300B232FA /* BoringDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoringDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA04DF2129A7E4C400B232FA /* BoringDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringDayTests.swift; sourceTree = "<group>"; };
 		CA084B812925498900C5F9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CA62776C291E9B3F005BEA18 /* BoringDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoringDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA62776F291E9B3F005BEA18 /* BoringDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoringDayApp.swift; sourceTree = "<group>"; };
@@ -31,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA04DF1C29A7E4C300B232FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA627769291E9B3E005BEA18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA04DF2029A7E4C400B232FA /* BoringDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA04DF2129A7E4C400B232FA /* BoringDayTests.swift */,
+			);
+			path = BoringDayTests;
+			sourceTree = "<group>";
+		};
 		CA627763291E9B3E005BEA18 = {
 			isa = PBXGroup;
 			children = (
 				CA62776E291E9B3F005BEA18 /* BoringDay */,
+				CA04DF2029A7E4C400B232FA /* BoringDayTests */,
 				CA62776D291E9B3F005BEA18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CA62776C291E9B3F005BEA18 /* BoringDay.app */,
+				CA04DF1F29A7E4C300B232FA /* BoringDayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +130,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA04DF1E29A7E4C300B232FA /* BoringDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA04DF2729A7E4C400B232FA /* Build configuration list for PBXNativeTarget "BoringDayTests" */;
+			buildPhases = (
+				CA04DF1B29A7E4C300B232FA /* Sources */,
+				CA04DF1C29A7E4C300B232FA /* Frameworks */,
+				CA04DF1D29A7E4C300B232FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA04DF2429A7E4C400B232FA /* PBXTargetDependency */,
+			);
+			name = BoringDayTests;
+			productName = BoringDayTests;
+			productReference = CA04DF1F29A7E4C300B232FA /* BoringDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CA62776B291E9B3E005BEA18 /* BoringDay */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA62777A291E9B3F005BEA18 /* Build configuration list for PBXNativeTarget "BoringDay" */;
@@ -124,9 +172,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					CA04DF1E29A7E4C300B232FA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA62776B291E9B3E005BEA18;
+					};
 					CA62776B291E9B3E005BEA18 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -146,11 +198,19 @@
 			projectRoot = "";
 			targets = (
 				CA62776B291E9B3E005BEA18 /* BoringDay */,
+				CA04DF1E29A7E4C300B232FA /* BoringDayTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA04DF1D29A7E4C300B232FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA62776A291E9B3E005BEA18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +223,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA04DF1B29A7E4C300B232FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA04DF2229A7E4C400B232FA /* BoringDayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA627768291E9B3E005BEA18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,7 +246,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CA04DF2429A7E4C400B232FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA62776B291E9B3E005BEA18 /* BoringDay */;
+			targetProxy = CA04DF2329A7E4C400B232FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CA04DF2529A7E4C400B232FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMWHQAT5B4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gfrm.BoringDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoringDay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoringDay";
+			};
+			name = Debug;
+		};
+		CA04DF2629A7E4C400B232FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CMWHQAT5B4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.academy.gfrm.BoringDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoringDay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BoringDay";
+			};
+			name = Release;
+		};
 		CA627778291E9B3F005BEA18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +476,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA04DF2729A7E4C400B232FA /* Build configuration list for PBXNativeTarget "BoringDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA04DF2529A7E4C400B232FA /* Debug */,
+				CA04DF2629A7E4C400B232FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA627767291E9B3E005BEA18 /* Build configuration list for PBXProject "BoringDay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
