@@ -5,15 +5,12 @@ workflows:
           - name: CICD Started
             script: echo "Welcome to your CICD set up"
           - name: Build Boring app
-            script: |
-              xcode-project build-ipa \
-                --workspace "CentralDoApito/BoringDay/BoringDay.xcodeproj/project.xcworkspace" \
-                --scheme "CentralDoApito/BoringDay/BoringDay"
+            script: xcodebuild build -scheme "CentralDoApito/BoringDay/BoringDay" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
           - name: iOS test
             script: |
               xcode-project run-tests \
                 --workspace CentralDoApito/BoringDay/BoringDay.xcodeproj/project.xcworkspace\
-                --scheme BoringDay
+                --scheme CentralDoApito/BoringDay/BoringDay
         publishing:
           email:
             recipients:
