@@ -6,7 +6,7 @@ workflows:
             script: echo "Welcome to your CICD set up"
           - name: Build Boring app
             script: |
-              xcode-project build-BD \
+              xcode-project build-ipa \
                 --workspace "CentralDoApito/BoringDay/BoringDay.xcodeproj/project.xcworkspace" \
                 --scheme "CentralDoApito/BoringDay/BoringDay"
           - name: iOS test
